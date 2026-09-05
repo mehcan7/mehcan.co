@@ -1,0 +1,539 @@
+/* eigen stijl bovenop Bootstrap 5.3 */
+
+:root {
+  --bg:          #0b0b0d;
+  --surface:     #131317;
+  --surface-2:   #1a1a1f;
+  --rand:        #26262d;
+  --rand-hover:  #3a3a44;
+
+  --tekst:       #f1f1f3;
+  --tekst-zacht: #9a9aa5;
+
+  /* accentkleur, hier veranderen als ik een andere kleur wil */
+  --accent:      #e0b073;
+  --accent-fel:  #edc48f;
+  --accent-vaag: rgba(224, 176, 115, 0.12);
+
+  --font-code: "JetBrains Mono", Consolas, "Courier New", monospace;
+}
+
+/* mijn kleuren doorgeven aan Bootstrap */
+[data-bs-theme="dark"] {
+  --bs-body-bg: var(--bg);
+  --bs-body-color: var(--tekst-zacht);
+  --bs-emphasis-color: var(--tekst);
+  --bs-heading-color: var(--tekst);
+  --bs-border-color: var(--rand);
+  --bs-secondary-bg: var(--surface);
+  --bs-tertiary-bg: var(--surface-2);
+  --bs-link-color: var(--accent);
+  --bs-link-hover-color: var(--accent-fel);
+
+  --bs-font-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --bs-body-font-size: 1rem;
+  --bs-body-line-height: 1.7;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.section--alt {
+  background-color: var(--surface);
+  border-top: 1px solid var(--rand);
+  border-bottom: 1px solid var(--rand);
+}
+
+
+/* koppen en labels */
+
+.eyebrow {
+  font-family: var(--font-code);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.pagekop {
+  max-width: 640px;
+  margin-bottom: 3.5rem;
+}
+
+.pagekop__titel {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.pagekop__text {
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+
+.section__title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.kop-klein,
+.panel__kop {
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--tekst-zacht);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+
+/* knoppen, gaan verder op Bootstrap .btn */
+
+.btn {
+  --bs-btn-padding-x: 1.5rem;
+  --bs-btn-padding-y: 0.7rem;
+  --bs-btn-font-size: 0.95rem;
+  --bs-btn-font-weight: 600;
+  --bs-btn-border-radius: 8px;
+}
+
+.btn-accent {
+  --bs-btn-color: #17130d;
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-color: #17130d;
+  --bs-btn-hover-bg: var(--accent-fel);
+  --bs-btn-hover-border-color: var(--accent-fel);
+  --bs-btn-active-bg: var(--accent-fel);
+  --bs-btn-active-border-color: var(--accent-fel);
+}
+
+.btn-outline-soft {
+  --bs-btn-color: var(--tekst);
+  --bs-btn-border-color: var(--rand);
+  --bs-btn-hover-color: var(--tekst);
+  --bs-btn-hover-bg: var(--surface-2);
+  --bs-btn-hover-border-color: var(--rand-hover);
+  --bs-btn-active-bg: var(--surface-2);
+  --bs-btn-active-border-color: var(--rand-hover);
+}
+
+
+/* grijze kaart, gebruik ik op over mij en contact */
+
+.panel {
+  background-color: var(--surface);
+  border: 1px solid var(--rand);
+  border-radius: 8px;
+  padding: 1.75rem;
+}
+
+.panel + .panel {
+  margin-top: 1.25rem;
+}
+
+.badge-zacht {
+  align-self: flex-start;
+  padding: 0.25rem 0.7rem;
+  margin-bottom: 0.75rem;
+  border-radius: 5px;
+  background-color: var(--accent-vaag);
+  color: var(--accent);
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+}
+
+.cta-rand {
+  margin-top: 4.5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid var(--rand);
+}
+
+
+/* navbar */
+
+.navbar {
+  --bs-navbar-color: var(--tekst-zacht);
+  --bs-navbar-hover-color: var(--tekst);
+  --bs-navbar-active-color: var(--tekst);
+  --bs-navbar-brand-color: var(--tekst);
+  --bs-navbar-brand-hover-color: var(--tekst);
+  --bs-navbar-padding-y: 1rem;
+
+  background-color: rgba(11, 11, 13, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rand);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.navbar-brand img {
+  border-radius: 7px;
+}
+
+.dot {
+  color: var(--accent);
+}
+
+.navbar-nav {
+  gap: 1.75rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+}
+
+/* streepje onder de pagina waar ik nu ben */
+.nav-link.active {
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 22px;
+  height: 2px;
+  background-color: var(--accent);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    gap: 0;
+    padding-top: 0.5rem;
+  }
+
+  .nav-item {
+    border-top: 1px solid var(--rand);
+  }
+
+  .nav-link {
+    padding: 0.7rem 0;
+  }
+}
+
+
+/* hero */
+
+.hero {
+  padding: 104px 0 96px;
+}
+
+.hero__title {
+  font-size: 3.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__role {
+  font-size: 1.3rem;
+  color: var(--tekst);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.hero__text {
+  font-size: 1.05rem;
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+
+.codecard {
+  background-color: var(--surface);
+  border: 1px solid var(--rand);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.codecard__bar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0.75rem 1rem;
+  background-color: var(--surface-2);
+  border-bottom: 1px solid var(--rand);
+}
+
+.codecard__bar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--rand-hover);
+}
+
+.codecard__file {
+  margin: 0 0 0 0.5rem;
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  color: var(--tekst-zacht);
+}
+
+.codecard__code {
+  margin: 0;
+  padding: 1.4rem 1.25rem;
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  line-height: 1.85;
+  color: var(--tekst-zacht);
+  overflow-x: auto;
+}
+
+.c-tag  { color: var(--accent); }
+.c-attr { color: var(--tekst); }
+.c-str  { color: #8fb8a0; }
+
+
+/* vaardigheden */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skills li {
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--rand);
+  border-radius: 100px;
+  background-color: var(--surface-2);
+  color: var(--tekst);
+  font-size: 0.95rem;
+}
+
+.skills--klein li {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.9rem;
+}
+
+
+/* over mij */
+
+.about__kop {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about__kop:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.feiten li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--rand);
+  font-size: 0.95rem;
+}
+
+.feiten li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.feiten strong {
+  color: var(--tekst);
+  font-weight: 500;
+  text-align: right;
+}
+
+.niveau {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.niveau li {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+/* bolletje voor de regel, in plaats van een standaard opsommingsteken */
+.niveau li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+
+/* projecten */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  border: 1px solid var(--rand);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project:hover {
+  border-color: var(--rand-hover);
+  transform: translateY(-3px);
+}
+
+/* werkt voor een <img> en voor het lege vakje zonder afbeelding */
+.project__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: var(--surface-2);
+  border-bottom: 1px solid var(--rand);
+  object-fit: cover;
+}
+
+.project__thumb span {
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5a5a66;
+}
+
+.project__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.project__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.project__text {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.project__note {
+  font-size: 0.85rem;
+  color: var(--tekst-zacht);
+}
+
+.project--leeg {
+  background-color: transparent;
+  border-style: dashed;
+}
+
+.project--leeg:hover {
+  transform: none;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.1rem;
+}
+
+.tags li {
+  padding: 0.25rem 0.7rem;
+  border-radius: 5px;
+  background-color: var(--accent-vaag);
+  color: var(--accent);
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+}
+
+
+/* contact */
+
+.contactlijst li {
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--rand);
+}
+
+.contactlijst li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.contactlijst span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--tekst-zacht);
+}
+
+.contactlijst__waarde {
+  margin: 0;
+  color: var(--tekst);
+  font-size: 1.05rem;
+  word-break: break-word;
+}
+
+
+/* footer */
+
+.footer {
+  border-top: 1px solid var(--rand);
+  padding: 2rem 0;
+}
+
+.footer__name {
+  color: var(--tekst);
+  font-weight: 500;
+}
+
+
+main {
+  animation: fadeIn 0.5s ease both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main { animation: none; }
+  .project { transition: none; }
+}
+
+
+@media (max-width: 767.98px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .hero {
+    padding: 72px 0 64px;
+  }
+
+  .hero__title {
+    font-size: 2.4rem;
+  }
+
+  .pagekop__titel {
+    font-size: 2rem;
+  }
+
+  .pagekop {
+    margin-bottom: 2.75rem;
+  }
+}

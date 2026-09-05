@@ -1,0 +1,4 @@
+Afbeeldingen van projecten komen hier.
+
+Bestandsnamen zonder spaties, bijvoorbeeld bakkerij-website.jpg
+In de HTML wordt dat dan images/bakkerij-website.jpg
