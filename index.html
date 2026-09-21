@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mehcan.co — Mehmetcan Demirci</title>
+  <title>mehcan.co | Mehmetcan Demirci</title>
   <meta name="description" content="Portfolio van Mehmetcan Demirci, Software Developer student aan MBO Utrecht. Ik bouw websites met HTML, CSS en Bootstrap.">
 
-  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="images/mehcan-icon-apple-dark.png" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,49 +19,31 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg sticky-top">
+  <nav class="navbar sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <img src="images/logo.svg" alt="" width="28" height="28">
+      <span class="navbar-brand d-flex align-items-center gap-2">
+        <img src="images/mehcan-icon-apple-gold.png" alt="" width="28" height="28">
         <span>mehcan<span class="dot">.co</span></span>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navMenu" aria-controls="navMenu"
-              aria-expanded="false" aria-label="Menu openen">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Over mij</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projecten</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+      </span>
     </div>
   </nav>
 
   <main>
 
+    <!-- 1. Hero / intro -->
     <section class="hero">
       <div class="container">
         <div class="row g-5 align-items-center">
 
           <div class="col-lg-6">
             <p class="eyebrow">Software Developer student — MBO Utrecht</p>
-            <h1 class="hero__title">Mehmetcan Demirci</h1>
-            <p class="hero__role">Software Developer &amp; Webdevelopment</p>
+            <h1 class="hero__title">Mehmet Can Demirci</h1>
+            <p class="hero__role">Software Developer student</p>
             <p class="hero__text">
-              Ik ben bezig met het leren bouwen van websites, met aandacht voor
-              een nette opbouw, een duidelijk design en een prettige
-              gebruikerservaring. Ik werk vooral met HTML, CSS en Bootstrap.
+              Ik ben Mehmet Can, tweedejaars Software Developer student aan MBO
+              Utrecht. Op deze website laat ik zien wie ik ben en aan welke
+              projecten ik tijdens mijn opleiding en daarbuiten heb gewerkt.
             </p>
-            <div class="d-flex flex-wrap gap-3">
-              <a href="projects.html" class="btn btn-accent">Bekijk mijn werk</a>
-              <a href="about.html" class="btn btn-outline-soft">Over mij</a>
-            </div>
           </div>
 
           <!-- alleen versiering, daarom aria-hidden -->
@@ -73,7 +55,7 @@
               </div>
 <pre class="codecard__code"><code>&lt;<span class="c-tag">div</span> <span class="c-attr">class</span>=<span class="c-str">"card"</span>&gt;
   &lt;<span class="c-tag">div</span> <span class="c-attr">class</span>=<span class="c-str">"card-body"</span>&gt;
-    &lt;<span class="c-tag">h5</span>&gt;Mehmetcan Demirci&lt;/<span class="c-tag">h5</span>&gt;
+    &lt;<span class="c-tag">h5</span>&gt;Mehmet Can Demirci&lt;/<span class="c-tag">h5</span>&gt;
     &lt;<span class="c-tag">p</span>&gt;Software Developer student&lt;/<span class="c-tag">p</span>&gt;
   &lt;/<span class="c-tag">div</span>&gt;
 &lt;/<span class="c-tag">div</span>&gt;</code></pre>
@@ -84,48 +66,117 @@
       </div>
     </section>
 
-    <section class="section section--alt">
+    <!-- 2. Over mij -->
+    <section id="over-mij" class="section">
       <div class="container">
-        <h2 class="kop-klein">Waar ik mee werk</h2>
-        <ul class="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>SQL</li>
-        </ul>
-        <p class="mt-4 mb-0 small">
-          Ik ben nog student, dus ik ben met een deel hiervan nog volop aan het leren.
-        </p>
+
+        <header class="pagekop">
+          <p class="eyebrow">Over mij</p>
+          <h2 class="pagekop__titel">Student, en bezig met websites bouwen.</h2>
+        </header>
+
+        <div class="row g-5">
+
+          <div class="col-lg-7">
+            
+            
+            
+
+            <h3 class="about__kop">Hoe ik leer</h3>
+            <p>
+              Ik leer het beste door dingen zelf te maken. Wanneer ik iets nieuws
+              tegenkom, probeer ik eerst te begrijpen hoe het werkt en daarna zelf
+              ermee aan de slag te gaan. Als iets niet lukt, zoek ik uit waar het
+              probleem zit en probeer ik het stap voor stap op te lossen.
+            </p>
+
+            <h3 class="about__kop">Webdevelopment</h3>
+            <p>
+              De laatste tijd ben ik vooral bezig met websites. Ik vind het leuk
+              om een idee om te zetten in een echte pagina die er goed uitziet en
+              ook goed werkt. Ik werk veel met HTML, CSS en Bootstrap en probeer
+              steeds beter te worden in het maken van responsive websites.
+            </p>
+
+            <h3 class="about__kop">Eigen projecten</h3>
+            <p>
+              Naast school vind ik het leuk om zelf projecten te bedenken en te
+              bouwen. Hierdoor kan ik nieuwe dingen uitproberen en tegelijk
+              oefenen met wat ik op school leer. Niet elk project wordt perfect,
+              maar juist door dingen zelf te maken leer ik het meeste.
+            </p>
+
+            <h3 class="about__kop">Waar ik naartoe wil</h3>
+            <p class="mb-0">
+              Ik ben nog bezig met ontdekken welke richting binnen software
+              development het beste bij mij past. Tijdens mijn stage wil ik
+              vooral ervaring opdoen, nieuwe dingen leren en meemaken hoe het is
+              om aan echte projecten te werken. Deze portfolio is een kleine
+              verzameling van wat ik tot nu toe heb gemaakt.
+            </p>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="panel">
+              <h2 class="panel__kop">Mijn skills</h2>
+              <ul class="feiten">
+                <li><span>HTML &amp; CSS</span></li>
+                <li><span>Bootstrap</span></li>
+                <li><span>Basis PHP</span></li>
+                <li><span>Basis SQL</span></li>
+                <li><span>Basis Git</span></li>
+              </ul>
+              <p class="niveau mt-3 mb-0">
+                Dit zijn vaardigheden waar ik momenteel mee werk en waar ik mij
+                nog steeds in aan het ontwikkelen ben.
+              </p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- 4. Projecten -->
+    <section id="projecten" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <h2 class="section__title">Een website nodig voor je bedrijf?</h2>
-            <p class="mb-4">
-              Ik bouw naast mijn opleiding graag websites voor kleine bedrijven en
-              ondernemers. Stuur me een bericht, dan kijken we samen wat er mogelijk is.
-            </p>
-            <a href="contact.html" class="btn btn-accent">Neem contact op</a>
+
+        <header class="pagekop">
+          <p class="eyebrow">Projecten</p>
+          <h2 class="pagekop__titel">Waar ik aan gewerkt heb.</h2>
+          <p class="pagekop__text">
+            Een overzicht van projecten die ik bouw tijdens en naast mijn
+            opleiding. Niet alles staat online, dus dit overzicht groeit nog.
+          </p>
+        </header>
+
+        <!-- nieuw project: kopieer het onderstaande col-md-8 blok -->
+
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-md-8">
+            <article class="project h-100">
+              <img src="images/kapperszaak-demo.png" alt="Screenshot van de kapperszaak demo website" class="project__thumb">
+              <div class="project__body">
+                <span class="badge-zacht">Demo project</span>
+                <h3 class="project__title">Kapperszaak demo</h3>
+                <p class="project__text">
+                  Een demo website die ik heb gemaakt voor een kapperszaak, met
+                  onder andere een overzicht van de behandelingen en een
+                  contactmogelijkheid.
+                </p>
+                <ul class="tags"><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul>
+                <a href="https://demo-kapper-eight.vercel.app/" class="btn btn-accent btn-sm mt-auto align-self-start"
+                   target="_blank" rel="noopener">Bekijk project</a>
+              </div>
+            </article>
           </div>
+
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
-      <div>
-        <p class="footer__name mb-0">Mehmetcan Demirci</p>
-        <p class="small mb-0">Software Developer student</p>
-      </div>
-      <p class="small mb-0">&copy; 2026 mehcan.co</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

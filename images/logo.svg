@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="mehcan.co">
-  <rect width="32" height="32" rx="8" fill="#e0b073"/>
-
-  <!-- de m, met de losse punt van .co ernaast -->
-  <path d="M9.5 22.5V12.5M9.5 16c0-3 1.9-4 3.9-4s2.85 1.5 2.85 4v6.5M16.25 16c0-3 1.9-4 3.9-4s2.85 1.5 2.85 4v6.5"
-        fill="none" stroke="#17130d" stroke-width="2.6"
-        stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="25.6" cy="21.4" r="1.7" fill="#17130d"/>
-</svg>
